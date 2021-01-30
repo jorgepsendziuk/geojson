@@ -25,7 +25,8 @@
 			var markers = L.markerClusterGroup({
 				spiderfyOnMaxZoom: false,
 				showCoverageOnHover: false,
-				zoomToBoundsOnClick: true
+				zoomToBoundsOnClick: true,
+				disableClusteringAtZoom: 13
 			});
 			var geoJsonLayer = L.geoJson(data, {
 			  onEachFeature: function (feature, layer) {
