@@ -27,8 +27,9 @@
 			});
 			markers.addLayer(geoJsonLayer);
 			
-			var map = L.map('map').addLayer(tiles).fitBounds(markers.getBounds());
+			var map = L.map('map').addLayer(tiles);
 			map.addLayer(markers);
+			map.fitBounds(markers.getBounds());
 
 		});
 
