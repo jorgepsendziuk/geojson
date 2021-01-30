@@ -21,7 +21,7 @@
 	<script type="text/javascript">
  		
 		$.getJSON("https://raw.githubusercontent.com/jorgepsendziuk/geojson/master/gasub.geojson", function(data) {
-			var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 15});
+			var tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 18});
 			var markers = L.markerClusterGroup({
 				spiderfyOnMaxZoom: false,
 				showCoverageOnHover: false,
